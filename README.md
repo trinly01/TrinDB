@@ -313,7 +313,7 @@ writes the compact data to a file
 | *filename* | `<string>` | (Optional) Path to file | current |
 |  | `<object>` | ( Optional ) a TrinDB object | `service.data` |
 ```javascript
-service.sort('test', service.data)
+service.copmact('test.db', service.data)
 ```
 
 
