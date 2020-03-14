@@ -4,7 +4,7 @@
   "description": "Embedded persistent or in memory NoSQL database for Node.js",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node index.js",
     "dev": "nodemon ./index.js",
     "_build": "webpack --mode production"
   },
