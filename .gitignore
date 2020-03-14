@@ -6,3 +6,4 @@ testCompact.db
 crud.js
 getRecords.js
 MrDot.js
+yarn.lock
