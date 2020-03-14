@@ -1,5 +1,6 @@
 const express = require('express')
-const trinDB = require('./TrinDB.js')
+// const trinDB = require('./TrinDB.js')
+const trinDB = require('trin.db')
 const app = express()
 const port = 3000
 
