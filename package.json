@@ -4,8 +4,9 @@
   "description": "Embedded persistent or in memory NoSQL database for Node.js",
   "main": "dist/index.js",
   "scripts": {
+    "start": "nodemon ./index.js",
     "dev": "nodemon ./index.js",
-    "_build": "webpack --mode production"
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
   ],
   "author": "Trinmar A Boado <timi.boado@gmail.com>",
   "license": "ISC",
+  "engines": {
+    "node": "^12.16.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "babel-loader": "^8.0.6",
