@@ -1,0 +1,8 @@
+node_modules/
+trinDB/
+test.db
+test2.db
+testCompact.db
+crud.js
+getRecords.js
+MrDot.js

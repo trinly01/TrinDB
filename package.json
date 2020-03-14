@@ -1,0 +1,26 @@
+{
+  "name": "trin.db",
+  "version": "0.0.1",
+  "description": "Embedded persistent or in memory NoSQL database for Node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "database",
+    "nosql",
+    "datastore"
+  ],
+  "author": "Trinmar A Boado <timi.boado@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "event-stream": "^4.0.1",
+    "express": "^4.17.1",
+    "uuid": "^7.0.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
