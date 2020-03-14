@@ -2,7 +2,7 @@ const express = require('express')
 // const trinDB = require('./TrinDB.js')
 const trinDB = require('trin.db')
 const app = express()
-const port = 3000
+const port = 8081
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
