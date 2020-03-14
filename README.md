@@ -32,7 +32,6 @@ yarn add trin.db
 
 ```javascript
 const trinDB = require('trin.db')
-// const wings = require('wings4').default
 
 service = await trinDB({
   filename: 'trinDb/test.db',

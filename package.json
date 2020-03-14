@@ -1,6 +1,6 @@
 {
   "name": "trin.db",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Embedded persistent or in memory NoSQL database for Node.js",
   "main": "dist/index.js",
   "scripts": {
@@ -30,6 +30,6 @@
     "uuid": "^7.0.2",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
-    "trin.db": "^0.0.2"
+    "trin.db": "^0.0.3"
   }
 }
