@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon ./index.js",
     "dev": "nodemon ./index.js",
-    "build": "webpack --mode production"
+    "_build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
