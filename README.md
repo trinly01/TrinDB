@@ -232,7 +232,7 @@ removs element by index and returns the `<object>`
 ```javascript
 // { _id: 'q12m3k', children: ['Trinly Zion', 'Trinmar Boado'] }
 
-service.inc('q12m3k', {
+service.splice('q12m3k', {
   'children': 1
 })
 
@@ -248,7 +248,7 @@ adds one or more elements to the end of an `array and returns the `<object>`
 ```javascript
 // { _id: 'q12m3k', children: ['Trinly Zion', 'Trinmar Boado'] }
 
-service.inc('q12m3k', {
+service.push('q12m3k', {
   'children': ['Lovely Boado']
 })
 
@@ -263,7 +263,7 @@ adds one or more elements to the beginning of an `array` and returns the `<objec
 ```javascript
 // { _id: 'q12m3k', children: ['Trinly Zion', 'Trinmar Boado'] }
 
-service.inc('q12m3k', {
+service.unshift('q12m3k', {
   'children': ['Lovely Boado']
 })
 
