@@ -2993,10 +2993,10 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
-trin.db@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/trin.db/-/trin.db-0.0.12.tgz#aae5b4682b6ec223bbfb1cdd6e9ff5671290f0f6"
-  integrity sha512-PxXhkyhs0MwVV7+FEq3U80stXn8NaobluuyBiMTksCUvzZlXrC+NPo1OmAD69meY4pyMLxN/si2awIC2XAupSg==
+trin.db@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/trin.db/-/trin.db-0.0.13.tgz#22186553d74ae58fbb925eb7bb2767f47ecbe797"
+  integrity sha512-ljomKbRSB5pOTsdw0soWNDux0mumk7YY+p7MDoAhrcHyMyb5T8rKkOxQwn142S1MxaRfw/LbqTe1ICCIXmSHOw==
 
 tslib@^1.9.0:
   version "1.11.1"

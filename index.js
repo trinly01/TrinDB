@@ -114,13 +114,19 @@ app.listen(port, async () => {
   
   console.log(`TrinDB app listening on port ${port}!`)
 
-  console.time('100,000')
-  for (let index = 0; index < 100000; index++) {
-    app.trinDB.testsSrvc.create({
+  console.time('1,000,000')
+  for (let index = 0; index < 1000000; index++) {
+    // app.trinDB.testsSrvc.create({
+    //   "desc": "Trinly01",
+    //   "isDone": false
+    // })
+    app.trinDB.testsSrvc.patch(
+      '01b568cf-c0ed-4816-933b-550edfe27a86',
+      {
       "desc": "Pogi",
       "isDone": false
     })
   }
-  console.timeEnd('100,000')
+  console.timeEnd('1,000,000')
   
 })
