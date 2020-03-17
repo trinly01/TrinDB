@@ -1,10 +1,10 @@
-module.exports = (path, data, fs) => {
+module.exports = (path, data, fs, fileWriteStream) => {
   fs.writeFileSync(path, '')
   for (const key in data) {
     const line = JSON.stringify({
       action: 'create',
       data: data[key]
     })
-    fs.appendFileSync(path, `${ line }\r\n`)
+    fileWriteStream.write(path, `${ line }\r\n`)
   }
 }
