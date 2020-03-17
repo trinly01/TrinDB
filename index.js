@@ -111,6 +111,16 @@ app.listen(port, async () => {
       }
     })
   }
+  
   console.log(`TrinDB app listening on port ${port}!`)
 
+  console.time('100,000')
+  for (let index = 0; index < 100000; index++) {
+    app.trinDB.testsSrvc.create({
+      "desc": "Pogi",
+      "isDone": false
+    })
+  }
+  console.timeEnd('100,000')
+  
 })
