@@ -1,20 +1,9 @@
 
 
 
-# Welcome to Trin.DB! 
-
-<!-- <p align="center">
-  <img width="300" src="https://miro.medium.com/max/3728/1*7zccGWE4o5LmxegijjK_xQ.png"/>
-  <br />
-  <img width="300" src="https://feathersjs.com/img/feathers-logo-wide.png" />
-</p> -->
+# Welcome to Trin.DB!
 
 A **fast RESTful persistent or in memory NoSQL database**  *`(18 KiB only!) `*
-
- <!-- - [x] DOM / UI (HTML)
- - [x] Data / State (Javascript)
- - [x] Local Storage (Offline)
- - [x] Backend/Database (Cloud) -->
 
 > **Join and support our Community**
 > Web and Mobile Developers PH
@@ -74,7 +63,10 @@ const hooks = ({app, service}) => ({  // Hooks Example
   }
   after: {
     all: [
-      (result) => console.log(result)
+      (result) => {
+        console.log(result)
+        return result
+      }
     ],
   }
 })
@@ -161,7 +153,7 @@ console.log(result)
 ```
 *RESTful API*
 ```bash
-curl --location --request GET 'http://localhost:3000/todos?desc=Delete&$limit=10&$skip=0'
+curl --location --request GET 'http://localhost:3000/todos?lastName=Pogi&$limit=10&$skip=0'
 ```
 ### Complex Query (conditional >, >==, <, <==, &&, || )
 ```javascript
@@ -351,7 +343,7 @@ curl --location --request PATCH 'http://localhost:3000/todos/:_id' \
 <span id="push"></span>
 
 ### *service.push(_id, `<object>`)* 
-adds one or more elements to the end of an `array and returns the `<object>`
+adds one or more elements to the end of an array and returns the `<object>`
 ```javascript
 // { _id: 'q12m3k', children: ['Trinly Zion', 'Trinmar Boado'] }
 
