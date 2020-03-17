@@ -38,27 +38,27 @@ const app = express()
 const port = process.env.PORT || 3000
 const trinDB = require('trin.db')
 
-app.use(express.json()) 			// required for RESTful APIs
+app.use(express.json())               // required for RESTful APIs
 
 app.listen(port, async () => {
   app.trinDB = {
-    todos: await trinDB({			// Todos Service
-      filename: 'trinDb/todos.db', 	// get records from a file
-      inMemoryOnly: false, 			// Optional
-      restful						// Optional
+    todos: await trinDB({             // Todos Service
+      filename: 'trinDb/todos.db',    // get records from a file
+      inMemoryOnly: false,            // Optional
+      restful                         // Optional
     })
   }
 })
 
 // Other Options
 
-const restful = { 				// Optional
-  app, 							// express app
-  url: '/todos', 				// API end-point
-  hooks							// Optional
+const restful = {                     // Optional
+  app,                                // express app
+  url: '/todos',                      // API end-point
+  hooks                               // Optional
 }
 
-const hooks = ({app, service}) => ({	// Hooks Example
+const hooks = ({app, service}) => ({  // Hooks Example
   before: {
     all: [
       (req, res, next) => {
