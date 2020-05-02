@@ -21,7 +21,8 @@ module.exports = ({app, service}) => {
       ],
       create: [
         (req, res, next) => {
-          console.log('ooops', req.query)
+          console.log('ooops', req.body)
+          req.body.dateCreated = Date.now()
           next()
         } 
       ],

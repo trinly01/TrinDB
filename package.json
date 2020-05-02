@@ -1,6 +1,6 @@
 {
   "name": "trin.db",
-  "version": "0.0.13",
+  "version": "0.0.15",
   "description": "RESTful Persistent or in memory NoSQL database",
   "main": "dist/index.js",
   "scripts": {

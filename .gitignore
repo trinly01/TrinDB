@@ -1,5 +1,6 @@
 node_modules/
 trinDB/
+data/
 test.db
 test2.db
 testCompact.db
