@@ -1,6 +1,6 @@
 {
   "name": "trin.db",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "RESTful Persistent or in memory NoSQL database",
   "main": "dist/index.js",
   "scripts": {
@@ -23,9 +23,6 @@
   ],
   "author": "Trinmar A Boado <timi.boado@gmail.com>",
   "license": "ISC",
-  "engines": {
-    "node": "^12.16.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "babel-loader": "^8.0.6",
